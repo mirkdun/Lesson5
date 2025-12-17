@@ -29,7 +29,7 @@ public class Main {
         String color = scanner.nextLine();
         mazda.setColor(color);
 
-        if  (mazda.getMaxSpeed() < 100) {
+        if (mazda.getMaxSpeed() < 100) {
             mazda.bip();
         } else if (mazda.getMaxSpeed() >= 100 && mazda.getMaxSpeed() <= 200) {
             mazda.vrum();
