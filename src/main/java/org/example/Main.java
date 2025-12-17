@@ -1,12 +1,42 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        Auto mazda = new Auto();
+
+        System.out.println("Введите название: ");
+        String name = scanner.nextLine();
+        mazda.setName(name);
+
+        System.out.println("Введите мощность двигателя: ");
+        String enginePower = scanner.nextLine();
+        mazda.setEnginePower(Integer.parseInt(enginePower));
+
+        System.out.println("Введите тип кузова: ");
+        String bodyType = scanner.nextLine();
+        mazda.setBodyType(bodyType);
+
+        System.out.println("Введите максимальную скорость: ");
+        String maxSpeed = scanner.nextLine();
+        mazda.setMaxSpeed(Double.parseDouble(maxSpeed));
+
+        System.out.println("Введите цвет: ");
+        String color = scanner.nextLine();
+        mazda.setColor(color);
+
+        if (mazda.getMaxSpeed() < 100) {
+            mazda.bip();
+        } else if (mazda.getMaxSpeed() >= 100 && mazda.getMaxSpeed() <= 200) {
+            mazda.vrum();
+        } else if (mazda.getMaxSpeed() > 200) {
+            mazda.vyiy();
+        }
+
+        mazda.elements();
+    }
 }
