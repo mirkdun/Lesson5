@@ -1,11 +1,11 @@
 package org.example;
 
 public class Auto {
-    String name = "Honda";
-    int enginePower = 250;
-    String bodyType = "Coupe";
-    double maxSpeed = 261.45;
-    String color = "Red";
+    private String name = "Honda";
+    private int enginePower = 250;
+    private String bodyType = "Coupe";
+    private double maxSpeed = 261.45;
+    private String color = "Red";
 
     public Auto() {
     }
@@ -78,3 +78,4 @@ public class Auto {
         System.out.println("Цвет: " + color);
     }
 }
+

@@ -14,16 +14,16 @@ public class Main {
         mazda.setName(name);
 
         System.out.println("Введите мощность двигателя: ");
-        String enginePower = scanner.nextLine();
-        mazda.setEnginePower(Integer.parseInt(enginePower));
+        int enginePower = Integer.parseInt(scanner.nextLine());
+        mazda.setEnginePower(enginePower);
 
         System.out.println("Введите тип кузова: ");
         String bodyType = scanner.nextLine();
         mazda.setBodyType(bodyType);
 
         System.out.println("Введите максимальную скорость: ");
-        String maxSpeed = scanner.nextLine();
-        mazda.setMaxSpeed(Double.parseDouble(maxSpeed));
+        double maxSpeed = Double.parseDouble(scanner.nextLine());
+        mazda.setMaxSpeed(maxSpeed);
 
         System.out.println("Введите цвет: ");
         String color = scanner.nextLine();
